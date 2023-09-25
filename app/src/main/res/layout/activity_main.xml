@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    >
+
+    <TextView
+        android:id="@+id/tv_nombreEmpresa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Login"
+        android:textColor="#BD0000"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:typeface="serif"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ly"
+        android:layout_below="@+id/tv_nombreEmpresa"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        >
+
+        <EditText
+            android:id="@+id/edt_nick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Nick"
+            android:inputType="text">
+
+            <requestFocus />
+        </EditText>
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/edt_clave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Contraseña"
+        android:inputType="text"
+        android:layout_below="@+id/ly"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Guardar usuario"
+        android:id="@+id/ckb_guardar"
+        android:checked="false"
+        android:layout_below="@+id/edt_clave"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/b_entrar"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:text="Entrar"
+        android:layout_below="@+id/ckb_guardar"
+        android:layout_marginTop="5dp"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
